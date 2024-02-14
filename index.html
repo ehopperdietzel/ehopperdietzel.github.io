@@ -6,19 +6,20 @@
     </header>
     <body>
         <div id="topbar" class="row-flex wrap align-center justify-center screen-width">
-            <a href="#">About Me</a>
-            <a href="#">Services</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects</a>
-            <a href="#">Research</a>
-            <a href="#">Talks</a>
-            <a href="#">Hire Me</a>
+            <a class="tab" href="about">About Me</a>
+            <a class="tab" href="services">Services</a>
+            <a class="tab" href="working-experience">Experience</a>
+            <a class="tab" href="projects">Projects</a>
+            <a class="tab" href="research">Research</a>
+            <a class="tab" href="talks">Talks</a>
+            <a class="tab" href="hireme">Hire Me</a>
         </div>
 
         <div id="sections">
 
-            <div id="about" class="col-flex align-center justify-center screen-height full-width">
-                <div class="row-flex wrap col-gap align-center justify-center screen-height full-width margin-top">
+            <div id="about" class="section col-flex align-center justify-center screen-height full-width">
+
+                <div class="row-flex wrap col-gap align-center justify-center full-width" style="margin-bottom: 120px;">
                     <div id="left-container" class="col-flex row-gap align-center">
                         <div id="profile-image"></div>
                         <table>
@@ -43,30 +44,30 @@
         
                     <div id="right-container">
                         <h2>About Me</h2>
-                        <p>Eduardo is a computer science civil engineer who graduated in 2022 from Universidad Austral de Chile. Currently, he resides in a small town called Puyuhuapi, surrounded by nature in the remote corners of the Chilean Patagonia. He loves art and creating; therefore, he sees software development as a way to express his creativity. He dreams of creating his own free operating system with a user-friendly experience and software tools that allow everyone to unleash their creativity. Consequently, he has created Cuarzo, an organization dedicated to the development of free and open-source software. Recently, he has developed an interest in the world of graphics on Linux and has dedicated a significant portion of his time to developing Louvre, a C++ library designed to facilitate the creation of Wayland compositors (display servers), among other tools.</p>
+                        <p class="justify">Eduardo is a computer science civil engineer who graduated in 2022 from Universidad Austral de Chile. Currently, he resides in a small town called Puyuhuapi, surrounded by nature in the remote corners of the Chilean Patagonia. He loves art and creating, therefore, he sees software development as a way to express his creativity. He dreams of creating his own free operating system with a user-friendly experience and software tools that allow everyone to unleash their creativity. Consequently, he has created Cuarzo, an organization dedicated to the development of free and open-source software. Recently, he has developed an interest in the world of graphics on Linux and has dedicated a significant portion of his time to developing Louvre, a C++ library designed to facilitate the creation of Wayland compositors (display servers), among other tools.</p>
                     </div>
                 </div>
-                <div style="height: 200px;"></div>
+
             </div>
 
-            <div id="services" class="col-flex align-center justify-center screen-height full-width">
+            <div id="services" class="section col-flex align-center justify-center screen-height full-width">
                 <h2>Services</h2><br><br>
-                <div class="row-flex col-gap wrap justify-center">
+                <div class="row-flex col-gap wrap justify-center align-center" style="margin-bottom: 120px; align-items:flex-start;">
     
                     <div class="service col-flex align-center">
                         <div class="title row-flex align-center col-gap-10">
                             <img style="height:45px" src="img/software.png"/>
                             <label>Software</label>
                         </div>
-                        <p>Whether it's web, desktop, or mobile apps, video games, Linux drivers, software for embedded devices, integration or design of AI models, and beyond – I've got you covered.  I am a hardworking individual who learns quickly and is a perfectionist at heart.</p>
+                        <p class="justify">Whether it's web, desktop, or mobile apps, video games, Linux drivers, software for embedded devices, integration or design of AI models, and beyond – I've got you covered. I am a hardworking individual who learns quickly and is a perfectionist at heart.</p>
                     </div>
     
                     <div class="service col-flex align-center">
                         <div class="title row-flex align-center col-gap-10">
-                            <img src="img/design.png"/>
+                            <img style="height:35px" src="img/design.png"/>
                             <label>Design</label>
                         </div>
-                        <p>From crafting logos to UI design, whether it's vectorized or pixel art, and extending to 3D modeling or animations, I handle a variety of tools such as a significant portion of the Adobe suite, Figma, Inkscape, Blender, among others. I have a deep passion for art, infusing my heart into every project, and, as per feedback, a keen sense of aesthetic. I work tirelessly until the desired result is achieved.</p>
+                        <p class="justify">From crafting logos to UI design, whether it's vectorized or pixel art, and extending to 3D modeling or animations, I handle a variety of tools such as a significant portion of the Adobe suite, Figma, Inkscape, Blender, among others. I have a deep passion for art, infusing my heart into every project, and, as per feedback, a keen sense of aesthetic. I work tirelessly until the desired result is achieved.</p>
                     </div>
     
                     <div class="service col-flex align-center">
@@ -74,34 +75,33 @@
                             <img style="height:50px" src="img/music.png"/>
                             <label>Music</label>
                         </div>
-                        <p>I play piano, guitar, bass, drums, and more. I love composing and producing music—strictly instrumental, as I am not proficient with lyrics. Additionally, I can assist you in mixing and mastering your tracks. My primary DAW is Logic Pro, although I also have experience with Pro Tools and Ableton. I frequently use the Fab Filter, Waves, and Ozone plugin suites and have a few pieces of hardware equipment.</p>
+                        <p class="justify">I play piano, guitar, bass, drums, and more. I love composing and producing music—mainly instrumental, as I am not proficient with lyrics. Additionally, I can assist you in mixing and mastering your tracks. My primary DAW is Logic Pro, although I also have experience with Pro Tools and Ableton. I frequently use the Fab Filter, Waves, and Ozone plugin suites and have a few pieces of hardware equipment.</p>
                     </div>
     
                 </div>
-                <div style="height: 200px;"></div>
             </div>
 
-            <div id="working-experience" class="col-flex align-center justify-center screen-height full-width">
+            <div id="working-experience" style="margin-bottom: 200px;" class="section col-flex align-center row-gap justify-center screen-height full-width">
                 <h2>Experience</h2><br><br>
 
                 <div class="row-flex justify-center col-gap wrap">
                     <div class="col-flex row-gap wrap">
         
                         <div class="experience">
-                            <h3>Ito-e Mobile App - 2020</h3>
-                            <p>During my university internship, I developed a mobile app using Expo/React Native and a REST API with PHP for Ito-e, a company specializing in providing services to construction companies for efficient project management and tracking. The application empowers Ito-e users to oversee project progress and conduct on-site inspections, allowing for organization by projects, typologies, batches, and more. Users, with different roles and permissions, can perform inspections in both online and offline modes. They can capture notes, photos, GPS location data, and other relevant information and can accept or reject completion indications provided by other users.
-                                The development posed a significant challenge due to the vast and intricate database and resource-intensive operations required for measuring project progress and implementing complex search filters. To address this challenge, I devised a solution for offline functionality, implementing a method to compress and simplify project information and images, storing them in a local database using SQLite. Additionally, I optimized and replicated the sophisticated server-side searches on mobile devices with limited processing power. Once an internet connection was restored, all locally captured data seamlessly synchronized with the server. The company managers were impressed with the outcome, considering my work at a senior level. They mentioned that due to the quality of the product, they felt confident in expanding their services to international clients.</p>
+                            <a target="_blank" href="https://apps.apple.com/ca/app/ito-e-2-0/id6446966099?platform=iphone"><h3>Ito-e Mobile App - 2022</h3></a>
+                            <p class="justify">During my university internship, I developed a mobile app using Expo/React Native and a REST API with PHP for Ito-e, a company specializing in providing services to construction companies for efficient project management and tracking. The application empowers Ito-e users to oversee project progress and conduct on-site inspections, allowing for organization by projects, typologies, batches, and more. Users, with different roles and permissions, can perform inspections in both online and offline modes. They can capture notes, photos, GPS location data, and other relevant information and can accept or reject completion indications provided by other users.
+                                The development posed a significant challenge due to the vast and intricate database and resource-intensive operations required for measuring project progress and implementing complex search filters. To address this challenge, I devised a solution for offline functionality, implementing a method to compress and simplify project information and images, storing them in a local database using SQLite. Additionally, I optimized and replicated the sophisticated server-side searches on mobile devices with limited processing power. Once an internet connection was restored, all locally captured data seamlessly synchronized with the server. The company managers were impressed with the outcome, considering my work at a senior level. They mentioned that due to the quality of the product, they felt confident in expanding their services to international clients.</p>
                         </div>
             
                         <div class="experience">
-                            <h3>Unicorn Games - 2020</h3>
-                            <p>I developed a 3D augmented reality mobile game using Unity for Unicorn Games, a company that combines tabletop games for children with technology. In this game, players engage in shooting at dynamic 3D targets that seemingly hover on the screen, seamlessly integrated with real-time images captured by the camera. This creates the illusion that the targets exist within the same room. The aiming mechanism involves utilizing the phone oscilloscope.
+                            <a target="_blank" href="https://unicorngames.co/en/home/"><h3>Unicorn Games - 2018</h3></a>
+                            <p class="justify">I developed a 3D augmented reality mobile game using Unity for Unicorn Games, a company that combines tabletop games for children with technology. In this game, players engage in shooting at dynamic 3D targets that seemingly hover on the screen, seamlessly integrated with real-time images captured by the camera. This creates the illusion that the targets exist within the same room. The aiming mechanism involves utilizing the phone oscilloscope.
                                 Simultaneously, I contributed to enhancing the visual effects of another augmented reality game within the company. This specific game, centered around Lego elements, manifested on the screen when kids directed the camera towards a game card.</p>
                         </div>
 
                         <div class="experience">
-                            <h3>Google Drive REST API - 2020</h3>
-                            <p>I created a concise website and REST API using Node.js for an Argentinian company named Red Tecnológica. The application offered an interactive platform for students to explore and interact with Google Drive functionality. This included features such as adding, removing, and modifying files and directories, as well as sharing files and other related functionalities.</p>
+                            <h3>Google Drive REST API - 2019</h3>
+                            <p class="justify">I created a concise website and REST API using Node.js for an Argentinian company named Red Tecnológica. The application offered an interactive platform for students to explore and interact with Google Drive functionality. This included features such as adding, removing, and modifying files and directories, as well as sharing files and other related functionalities.</p>
                         </div>
 
                     </div>
@@ -109,27 +109,202 @@
                     <div class="col-flex row-gap wrap">
                         <div class="experience">
                             <h3>Body Gestures Controller - 2020</h3>
-                            <p>I created a Linux desktop application for one of my freelance clients. This application enables users to map body gestures captured by the camera to system events, allowing functionalities such as controlling the pointer or managing racing games using hand gestures. To achieve this, I used the PoseNET model, enabling precise tracking of body part positions captured by the camera, meeting the client's desired level of precision.</p>
+                            <p class="justify">I created a Linux desktop application for one of my freelance clients. This application enables users to map body gestures captured by the camera to system events, allowing functionalities such as controlling the pointer or managing racing games using hand gestures. To achieve this, I used the PoseNET model, enabling precise tracking of body part positions captured by the camera, meeting the client's desired level of precision.</p>
                         </div>
 
                         <div class="experience">
-                            <h3>Apunta al Éxito - 2020</h3>
-                            <p>I developed a web application for a small business dedicated to providing tutoring services to pre-university students from their homes.
+                            <a target="_blank" href="http://apuntaalexito.cl/"><h3>Apunta al Éxito - 2019</h3></a>
+                            <p class="justify">I developed a web application for a small business dedicated to providing tutoring services to pre-university students from their homes.
                                 The website comprised three panels: one for students, allowing them to view a calendar with available tutor hours for specific subjects, schedule appointments, and make payments through Transbank Webpay or in cash; another panel for tutors, enabling them to add the subjects they can teach and their schedules; and a third panel for administrators, providing them with the ability to analyze student and tutor profiles/reviews and manage finances.
                                 Additionally, the website calculated the transportation cost for tutors to reach the students' homes.</p>
                         </div>
 
                         <div class="experience">
-                            <h3>File Processing Chain - 2020</h3>
-                            <p>I developed a desktop application using Qt and implemented a Python microservice for a freelance client. The project involved creating an application that allows users to select two directories—one to monitor for incoming files (from another local application) and another to receive the processed files from an external service.
+                            <h3>File Processing Chain - 2021</h3>
+                            <p class="justify">I developed a desktop application using Qt and implemented a Python microservice for a freelance client. The project involved creating an application that allows users to select two directories—one to monitor for incoming files (from another local application) and another to receive the processed files from an external service.
                                 Essentially, the local files were sent to a Python microservice, which added them to a RabbitMQ queue. Subsequently, the files were processed by an external service and sent back to the microservice as processed. The desktop application then fetched the microservice and stored the processed files in the second directory. Additionally, the desktop app displayed a table containing file information and the processing status.</p>
                         </div>
                     </div>
                 </div>
-                <div style="height: 200px;"></div>
+            </div>
+
+            <div id="projects" style="margin-bottom: 200px;" class="section col-flex align-center row-gap justify-center screen-height full-width">
+                <h2 style="margin-bottom: 10px;">Projects</h2>
+                <img style="width:72px" src="img/cuarzo.png"/>
+                <p style="max-width:500px;text-align:center;">A few years ago, I founded Cuarzo, a software organization committed to developing free and open-source software. Consequently, all my open-source projects are released under <a target="_blank" href="https://github.com/sponsors/CuarzoSoftware">@CuarzoSoftware</a></p>
+                <div class="col-flex row-gap justify-center col-gap wrap">
+
+                    <div class="project">
+                        <div class="logo"><img src="img/louvre.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/Louvre">Louvre</a></div>
+                            <p class="justify">Louvre is a C++ library for developing Wayland compositors. Currently in version 1.2.0.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="logo"><img src="img/srm.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/SRM">Simple Rendering Manager</a></div>
+                            <p class="justify">SRM is a C library for building OpenGL ES 2.0 applcations over the Linux DRM/KMS API. It is used as the main graphic backend for Louvre.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="logo"><img style="width:68px" src="img/crystals.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/Crystals">Crystals</a></div>
+                            <p class="justify">Crystals is the Wayland compositor of Cuarzo OS developed with Louvre. Its development will continue once Louvre 2.0.0 is released.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="logo"><img src="img/heaven.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/Heaven">Heaven</a></div>
+                            <p class="justify">Heaven is C library for exposing global menus in Wayland and X11 desktops and is still under development.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="logo"><img src="img/firmament.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/Firmament">Firmament</a></div>
+                            <p class="justify">Firmament is the global menu for Cuarzo OS. It uses Qt and the Heaven library.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="logo"><img style="width:88px" src="img/audiobox.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/AudioBox">Audio Box</a></div>
+                            <p class="justify">Audio Box is a C library for developing audio plugins and is still under early development.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="logo"><img style="width:68px" src="img/levels.png"/></div>
+                        <div>
+                            <div class="title"><a target="_blank" href="https://github.com/CuarzoSoftware/Levels-Pro">Levels Pro</a></div>
+                            <p class="justify">Levels Pro is a digital audio workstation which developed with Qt that uses Audio Box as its main plugin and audio processing system.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="research" class="section col-flex align-center row-gap justify-center screen-height full-width">
+                <h2 style="margin-bottom: 0px;">Research</h2>
+
+                <p style="max-width:500px;text-align:center;">In this section, you will find some of the projects I worked on during my university studies that I consider interesting.</p>
+
+                <div class="row-flex justify-center col-gap wrap">
+                    <div class="col-flex row-gap wrap">
+        
+                        <div class="experience">
+                            <a target="_blank" href="https://github.com/ehopperdietzel/HandRecognition/blob/master/Bit%C3%A1cora.ipynb"><h3>Hand Recognition CNN</h3></a>
+                            <p class="justify">The goal of this project was to create a convolutional neural network for accurately classifying hand images featuring various gestures. Subsequently, the performance of this network was compared with a fine-tuned ResNet18, specifically retrained on its fully connected layer. Following extensive testing and training using diverse architectures and image preprocessing techniques, I successfully developed a model that demonstrated notably higher accuracy than ResNet18, particularly in the context of hand gestures recognition.</p>
+                        </div>
+            
+                        <div class="experience">
+                            <a target="_blank" href="https://github.com/ehopperdietzel/python-video-codec/blob/master/Informe.pdf"><h3>Video Encoder/Decoder</h3></a>
+                            <p class="justify">This project involved the development of a video encoder and decoder, along with adjustable noise elimination filters, to allow video transmission across both high and severely constrained bandwidths. Within this project, various techniques were applied, including the use of the 2D FFT, FIR, or IIR filters to eliminate sinusoidal noise, methods to address saturated pixels, and diverse compression techniques such as lossy compression using the cosine transform, perspective transformation analysis using the mean squared error, scaling or translation between frames, and redundancy reduction using Shannon entropy theory.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-flex row-gap wrap">
+                        <div class="experience">
+                            <a target="_blank" href="https://github.com/ehopperdietzel/billionaires-analysis/blob/main/info147_tarea2.ipynb"><h3>Billionaires Analysis</h3></a>
+                            <p class="justify">The objective of this project was to determine if it is possible to predict the number of billionaires per country based on variables such as population size, GATT, and GDP by modeling the problem with a Poisson regression. The project involved finding the model weights using various optimization methods and analyzing the results using resampling techniques such as bootstrap.</p>
+                        </div>
+
+                        <div class="experience">
+                            <a target="_blank" href="https://github.com/ehopperdietzel/TFTP-Plus"><h3>TFTP+</h3></a>
+                            <p class="justify">In this project, I was tasked with enhancing the TFTP 1350 file transfer protocol to include support for user authentication, directory navigation, and simultaneous packet and file transfers. The protocol specifications were documented in the form of an RFC, and I additionally provided an example implementation using Python.</p>
+                        </div>
+
+                        <div class="experience">
+                            <a target="_blank" href="https://github.com/ehopperdietzel/Filtrado-De-Senales/blob/master/tarea2_info183.ipynb"><h3>Electrograms Noise Filtering</h3></a>
+                            <p class="justify">This project focused on analyzing, identifying, and filtering the noise present in signals generated by electrograms. To achieve this, an analysis was conducted in the frequency spectrum using the Fast Fourier Transform (FFT), spectrograms, and various types of filters were then applied. Subsequently, the effectiveness of Finite Impulse Response (FIR) and Infinite Impulse Response (IIR) filters was compared.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="talks" class="section col-flex align-center row-gap justify-center screen-height full-width">
+                <h2>Talks</h2>
+                <div class="talk col-gap row-gap">
+                    <div>
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/PXGOOvDqi3E?si=UBd4tTLFMYXBvlU1&amp;start=12433" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    </div>
+                    <div>
+                        <div style="font-weight:bold;" class="title">Workshop Primavera UACh - 2020</div>
+                        <p class="justify" style="max-width: 400px;">In my final year at university, I was invited to showcase my thesis at an annual workshop attended by professors, peers, and specially organized to motivate students from the first generation.
+                            During the presentation, I delved into Louvre, a C++ library designed to streamline the development of Wayland compositors on Linux—an ongoing project that I continue to advance to this day.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hireme" class="section col-flex align-center row-gap justify-center screen-height full-width">
+                <h2>Hire Me</h2>
+                <p style="max-width:500px;text-align:center;margin-bottom:50px;">Feel free to contact me. I speak Spanish, English and I am currently learning german. My only requirement is the ability to work remotely, considering the location where I currently reside.</p>
             </div>
 
         </div>
         
+        <script>
+
+        window.onload = function() {
+
+            const tabs = Array.from(document.getElementsByClassName('tab'));
+
+            function smoothScroll(tab) {
+                const headerOffset = 65;
+                const elementPosition = tab.section.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+
+            tabs.forEach(tab =>
+            {
+                tab.section = document.getElementById(tab.getAttribute('href'));
+                tab.section.tab = tab;
+                tab.addEventListener('click', function(ev) {
+                    ev.preventDefault();
+                    smoothScroll(tab);
+                });
+            });  
+
+            function calculateIntersection() 
+            {
+                let elementWithMaxArea = null;
+                let maxIntersectionArea = 0;
+
+                tabs.forEach(tab => 
+                {
+                    const rect = tab.section.getBoundingClientRect();
+                    const intersectionArea = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0)) / rect.height;
+
+                    if (intersectionArea > maxIntersectionArea) {
+                        maxIntersectionArea = intersectionArea;
+                        elementWithMaxArea = tab;
+                    }
+
+                    tab.classList.remove('active');
+                });
+                
+                elementWithMaxArea.classList.add('active');
+            }
+
+            // Call the function on page load and scroll
+            document.addEventListener('DOMContentLoaded', calculateIntersection);
+            window.addEventListener('scroll', calculateIntersection);        
+        }
+        </script>
+
     </body>
 </html>
