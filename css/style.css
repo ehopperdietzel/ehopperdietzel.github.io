@@ -119,8 +119,8 @@ h3
 #sections
 {
     position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 60px;
     overflow-y: scroll;
 }
@@ -244,10 +244,22 @@ h3
     text-align: initial;
 }
 
-@media only screen and (max-width: 680px) {
-    .justify
+@media only screen and (max-width: 600px) {
+
+
+    #topbar a
     {
-        text-align: justify;
-        text-justify:newspaper;
+        font-size: 12px;
+    }
+
+    #about-title
+    {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #profile-image
+    {
+        margin-top: 20px;
     }
 }
